@@ -8,8 +8,8 @@
 <meta property="og:title" content="JDH Transport | Rural Freight &amp; Cartage, Taumarunui">
 <meta property="og:description" content="Freight and farm cartage across the King Country. One call gets your load on the truck.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=70&fm=jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23e8862a'/%3E%3Ctext x='32' y='44' font-family='Arial Black,Arial,sans-serif' font-size='26' font-weight='900' fill='%23171b21' text-anchor='middle'%3EJDH%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://jdh-transport-demo.vercel.app/images/aggregate-truck.jpg">
+<link rel="icon" type="image/png" href="/images/jdh-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -210,15 +210,25 @@ section{padding:96px 0}
 .foot-base .socials{margin:0}
 .foot-base .socials a{width:40px;height:40px}
 @media (max-width:820px){.foot-grid{grid-template-columns:1fr;gap:32px}}
+
+.logo{flex-shrink:0}
+.logo img{display:block;width:150px;height:auto;max-width:100%}
+@media(max-width:380px){.logo img{width:125px}}
+.foot-brand .logo img{width:220px}
+.intro img{width:min(440px,80vw);height:auto}
+.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.work-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
+.work-grid figcaption{margin-top:12px;font-weight:500}
+@media(max-width:600px){.work-grid{grid-template-columns:1fr}.hero-slides img{object-position:78% center}}
 </style>
 </head>
 <body>
 
-<div class="intro" aria-hidden="true"><span>JDH <em>Transport</em></span></div>
+<div class="intro" aria-hidden="true"><span><img src="/images/jdh-logo.png" alt="JDH Transport" width="830" height="304"></span></div>
 
 <header class="nav">
   <div class="nav-in">
-    <a class="logo" href="#top" aria-label="JDH Transport home">JDH <b>Transport</b></a>
+    <a class="logo" href="#top" aria-label="JDH Transport home"><img src="/images/jdh-logo.png" alt="JDH Transport" width="830" height="304"></a>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
@@ -246,8 +256,8 @@ section{padding:96px 0}
 
 <section class="hero" style="padding:0">
   <div class="hero-slides" aria-hidden="true">
-    <img class="on" src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1900&q=72&fm=jpg" alt="" fetchpriority="high" width="1900" height="1267">
-    <img src="https://images.unsplash.com/photo-1592805144716-feeccccef5ac?w=1900&q=72&fm=jpg" alt="" loading="lazy" width="1900" height="1267">
+    <img class="on" fetchpriority="high" src="/images/aggregate-truck.jpg" alt="" width="1465" height="1073">
+    <img loading="lazy" src="/images/truck-and-digger.jpg" alt="" width="1448" height="1086">
   </div>
   <div class="hero-scrim" aria-hidden="true"></div>
   <div class="hero-in">
@@ -283,7 +293,7 @@ section{padding:96px 0}
     </div>
     <div class="svc-grid">
       <article class="svc reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1616432043562-3671ea2e5242?w=900&q=70&fm=jpg" alt="Curtainsider trailer on the highway at dusk" loading="lazy" width="900" height="506"></div>
+        <div class="svc-img"><img loading="lazy" src="/images/fleet-yard.jpg" alt="JDH Transport trucks and low-loader at the yard" width="1448" height="1086"></div>
         <div class="svc-body">
           <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="6" width="14" height="11" rx="1"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>Freight</span>
           <h3>General freight</h3>
@@ -291,7 +301,7 @@ section{padding:96px 0}
         </div>
       </article>
       <article class="svc reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1484557985045-edf25e08da73?w=900&q=70&fm=jpg" alt="Sheep in a King Country paddock" loading="lazy" width="900" height="675"></div>
+        <div class="svc-img"><img loading="lazy" src="/images/rural-machinery.jpg" alt="JDH Transport truck carrying an excavator on a rural property" width="1463" height="1075"></div>
         <div class="svc-body">
           <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-8l9-6 9 6v8"/><path d="M9 21v-6h6v6"/></svg>Rural</span>
           <h3>Farm &amp; rural cartage</h3>
@@ -299,7 +309,7 @@ section{padding:96px 0}
         </div>
       </article>
       <article class="svc reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?w=900&q=70&fm=jpg" alt="Ripe crop ready for baling in the sun" loading="lazy" width="900" height="675"></div>
+        <div class="svc-img"><img loading="lazy" src="/images/fleet-yard.jpg" alt="JDH Transport fleet ready for cartage" width="1448" height="1086"></div>
         <div class="svc-body">
           <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>Season</span>
           <h3>Hay &amp; baleage</h3>
@@ -307,7 +317,7 @@ section{padding:96px 0}
         </div>
       </article>
       <article class="svc reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?w=900&q=70&fm=jpg" alt="Tractor working a paddock from above" loading="lazy" width="900" height="600"></div>
+        <div class="svc-img"><img loading="lazy" src="/images/black-truck.webp" alt="Black JDH Transport tipper truck" width="916" height="1020"></div>
         <div class="svc-body">
           <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>Supply</span>
           <h3>Fertiliser &amp; farm supplies</h3>
@@ -315,7 +325,7 @@ section{padding:96px 0}
         </div>
       </article>
       <article class="svc reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?w=900&q=70&fm=jpg" alt="Diggers and a bulldozer on an earthworks site" loading="lazy" width="900" height="675"></div>
+        <div class="svc-img"><img loading="lazy" src="/images/truck-and-digger.jpg" alt="JDH Transport truck and trailer carrying a digger" width="1448" height="1086"></div>
         <div class="svc-body">
           <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h12M4 17a2 2 0 1 0 0 .01M16 17a2 2 0 1 0 0 .01"/><path d="M6 13l2-6h5l3 6"/></svg>Gear</span>
           <h3>Machinery &amp; equipment</h3>
@@ -323,7 +333,7 @@ section{padding:96px 0}
         </div>
       </article>
       <article class="svc reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1523848309072-c199db53f137?w=900&q=70&fm=jpg" alt="Loaders and trucks working a quarry face" loading="lazy" width="900" height="600"></div>
+        <div class="svc-img"><img loading="lazy" src="/images/aggregate-truck.jpg" alt="Orange JDH Transport truck and trailer loaded with aggregate" width="1465" height="1073"></div>
         <div class="svc-body">
           <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 18H3z"/></svg>Bulk</span>
           <h3>Metal &amp; aggregate</h3>
@@ -334,10 +344,23 @@ section{padding:96px 0}
   </div>
 </section>
 
+<section class="work" id="work">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <h2>Out on the job</h2>
+      <p>A closer look at the equipment and work behind JDH Transport.</p>
+    </div>
+    <div class="work-grid">
+      <figure class="reveal"><img src="/images/excavators.jpg" alt="Hitachi and Hyundai excavators with an operator at a work site" loading="lazy" width="1448" height="1086"><figcaption>Equipment on site</figcaption></figure>
+      <figure class="reveal"><img src="/images/road-clearing.jpg" alt="Yellow site dumper beside fallen branches on a rural road" loading="lazy" width="1448" height="1086"><figcaption>Working on rural roads</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section id="about">
   <div class="wrap about-grid">
     <div class="about-photo reveal">
-      <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1100&q=72&fm=jpg" alt="Cattle in a paddock at sunset near Taumarunui" loading="lazy" width="1100" height="733">
+      <img loading="lazy" src="/images/fleet-yard.jpg" alt="JDH Transport trucks parked at the yard" width="1448" height="1086">
     </div>
     <div class="about-copy reveal">
       <h2>Straight-up rural freight</h2>
@@ -479,7 +502,7 @@ section{padding:96px 0}
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <span class="logo">JDH <b>Transport</b></span>
+        <span class="logo"><img src="/images/jdh-logo.png" alt="JDH Transport" width="830" height="304"></span>
         <p>Rural freight and cartage based on Hikumutu Road, Taumarunui, serving farms and businesses across the King Country.</p>
       </div>
       <div class="foot-col">
