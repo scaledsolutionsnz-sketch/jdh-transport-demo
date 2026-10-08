@@ -1,610 +1,288 @@
 <!DOCTYPE html>
 <html lang="en-NZ">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JDH Transport | Rural Freight &amp; Cartage, Taumarunui</title>
-<meta name="description" content="JDH Transport carts general freight, hay, machinery and farm supplies across Taumarunui and the King Country. Ring Justin on 027 218 2136 for a quote.">
-<meta property="og:title" content="JDH Transport | Rural Freight &amp; Cartage, Taumarunui">
-<meta property="og:description" content="Freight and farm cartage across the King Country. One call gets your load on the truck.">
+<meta name="robots" content="noindex">
+<title>JDH Transport | Cartage &amp; Machinery Transport, Taumarunui</title>
+<meta name="description" content="Truck and trailer cartage, machinery transport, digger work and slip clean-ups from Hikumutu Road, Taumarunui. Call Justin on 027 218 2136.">
+<meta property="og:title" content="JDH Transport | Cartage &amp; Machinery Transport, Taumarunui">
+<meta property="og:description" content="Cartage, machinery transport and digger work across the King Country.">
+<meta property="og:image" content="https://jdh-transport-demo.vercel.app/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://jdh-transport-demo.vercel.app/images/aggregate-truck.jpg">
-<link rel="icon" type="image/png" href="/images/jdh-logo.png">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<style>
-:root{
-  --ink:#171b21;
-  --ink-2:#1e242c;
-  --ink-3:#242b35;
-  --bone:#f4f2ec;
-  --paper:#faf9f5;
-  --accent:#e8862a;
-  --accent-deep:#c96f1c;
-  --body:#2c313a;
-  --mut:#9aa2ad;
-  --line:rgba(23,27,33,.12);
-  --line-dark:rgba(244,242,236,.14);
-  --display:"Saira Condensed",sans-serif;
-  --sans:"IBM Plex Sans",sans-serif;
-  --r:2px;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--body);background:var(--paper);font-size:16px;line-height:1.7;overflow-x:hidden}
-img{max-width:100%;display:block;image-orientation:from-image}
-a{color:inherit;text-decoration:none}
-::selection{background:var(--accent);color:var(--ink)}
-h1,h2,h3{font-family:var(--display);color:var(--ink);line-height:1.05;text-transform:uppercase;letter-spacing:.01em}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-
-/* ---------- intro curtain ---------- */
-.intro{position:fixed;inset:0;z-index:200;background:var(--ink);display:flex;align-items:center;justify-content:center;transition:transform .9s cubic-bezier(.76,0,.24,1) .9s,visibility 0s 1.9s}
-.intro span{font-family:var(--display);font-weight:700;font-size:clamp(2rem,6vw,3.6rem);text-transform:uppercase;color:var(--bone);letter-spacing:.06em;opacity:0;transform:translateY(24px);animation:introWord .8s cubic-bezier(.16,1,.3,1) .15s forwards}
-.intro span em{font-style:normal;color:var(--accent)}
-@keyframes introWord{to{opacity:1;transform:none}}
-body.loaded .intro{transform:translateY(-100%);visibility:hidden}
-@media (prefers-reduced-motion:reduce){.intro{display:none}}
-
-/* ---------- nav ---------- */
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(23,27,33,.93);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-dark)}
-.nav-in{max-width:1160px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{font-family:var(--display);font-weight:700;font-size:1.5rem;text-transform:uppercase;letter-spacing:.05em;color:var(--bone);line-height:1;display:flex;align-items:center;gap:10px}
-.logo b{color:var(--accent);font-weight:700}
-.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
-.nav-links a{color:var(--bone);font-size:.95rem;font-weight:500;position:relative;padding:4px 0}
-.nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:100%;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
-.nav-links a:hover::after{transform:scaleX(1)}
-.nav-call{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;background:var(--accent);color:var(--ink);font-weight:600;font-size:.92rem;line-height:1;border-radius:var(--r);transition:background .2s ease,transform .2s ease}
-.nav-call:hover{background:#f2984a}
-.nav-call:active{transform:translateY(1px)}
-.nav-call svg{flex:none}
-.burger{display:none;background:none;border:1px solid var(--line-dark);border-radius:var(--r);width:44px;height:44px;cursor:pointer;align-items:center;justify-content:center;color:var(--bone)}
-.m-menu{display:none}
-.nav-call-short{display:none}
-@media (max-width:560px){
-  .nav-in{gap:10px}
-  .logo{font-size:1.25rem}
-  .nav-call{padding:0 14px}
-  .nav-call-num{display:none}
-  .nav-call-short{display:inline}
-}
-@media (max-width:860px){
-  .nav-links{display:none}
-  .burger{display:flex}
-  .m-menu{display:block;position:fixed;top:68px;left:0;right:0;z-index:99;background:var(--ink);border-bottom:1px solid var(--line-dark);padding:12px 24px 24px;transform:translateY(-110%);transition:transform .35s cubic-bezier(.16,1,.3,1)}
-  .m-menu.open{transform:none}
-  .m-menu a{display:flex;align-items:center;min-height:48px;color:var(--bone);font-size:1.05rem;font-weight:500;border-bottom:1px solid var(--line-dark)}
-  .m-menu a:last-child{border-bottom:0;margin-top:12px;background:var(--accent);color:var(--ink);justify-content:center;font-weight:600;border-radius:var(--r)}
-  @media (prefers-reduced-motion:reduce){.m-menu{transition:none}}
-}
-
-/* ---------- hero ---------- */
-.hero{position:relative;min-height:100dvh;background:var(--ink);display:flex;flex-direction:column;justify-content:center;overflow:hidden}
-.hero-slides{position:absolute;inset:0}
-.hero-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.6s ease;filter:saturate(.82) contrast(1.06)}
-.hero-slides img.on{opacity:1}
-.hero-scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,27,33,.62) 0%,rgba(23,27,33,.5) 45%,rgba(23,27,33,.82) 100%)}
-.hero-in{position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:120px 24px 72px;width:100%}
-@media (max-width:560px){.hero-in{padding:100px 24px 56px}.hero-sub{margin:16px 0 24px}.hero-quote{margin-top:28px}}
-.hero-eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
-.hero h1{font-size:clamp(2.5rem,6vw,4.6rem);font-weight:700;color:var(--bone);max-width:24ch}
-.hero-sub{margin:20px 0 32px;font-size:1.1rem;color:rgba(244,242,236,.85);max-width:44ch}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:54px;padding:0 28px;font-family:var(--sans);font-size:1rem;font-weight:600;line-height:1;border-radius:var(--r);transition:background .2s ease,color .2s ease,transform .2s ease;cursor:pointer;border:0}
-.btn:active{transform:translateY(1px) scale(.99)}
-.btn-solid{background:var(--accent);color:var(--ink)}
-.btn-solid:hover{background:#f2984a}
-.btn-ghost{background:transparent;color:var(--bone);border:1px solid rgba(244,242,236,.4)}
-.btn-ghost:hover{border-color:var(--bone);background:rgba(244,242,236,.08)}
-.hero-quote{margin-top:40px;max-width:430px;background:rgba(23,27,33,.6);border:1px solid rgba(244,242,236,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:var(--r);padding:18px 20px;min-height:118px}
-.hero-quote .stars{color:var(--accent);display:flex;gap:2px;margin-bottom:8px}
-.hero-quote blockquote{font-size:.95rem;color:rgba(244,242,236,.92);font-style:italic;line-height:1.5;transition:opacity .5s ease}
-.hero-quote cite{display:block;margin-top:6px;font-style:normal;font-size:.82rem;color:#c9cfd6}
-.hero-quote.fading blockquote,.hero-quote.fading cite{opacity:0}
-
-/* ---------- sections shared ---------- */
-section{padding:96px 0}
-.sec-head{max-width:640px;margin-bottom:52px}
-.sec-head h2{font-size:clamp(2.1rem,4.6vw,3.2rem);font-weight:700}
-.sec-head p{margin-top:14px;color:#5a616c}
-.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
-.reveal.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
-
-/* ---------- services ---------- */
-.services{background:var(--bone)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.svc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease}
-.svc:hover{transform:translateY(-6px);box-shadow:0 18px 34px -18px rgba(23,27,33,.35)}
-.svc-img{aspect-ratio:16/9;overflow:hidden}
-.svc-img img{width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(1.06);transition:transform .5s cubic-bezier(.16,1,.3,1)}
-.svc:hover .svc-img img{transform:scale(1.05)}
-.svc-body{padding:22px 22px 26px}
-.svc-tag{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:10px}
-.svc-tag svg{flex:none}
-.svc h3{font-size:1.45rem;font-weight:600;margin-bottom:8px}
-.svc p{font-size:.95rem;color:#5a616c;line-height:1.6}
-@media (max-width:960px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:640px){.svc-grid{grid-template-columns:1fr}}
-
-/* ---------- about ---------- */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
-.about-photo{position:relative}
-.about-photo img{aspect-ratio:4/3;object-fit:cover;width:100%;border-radius:var(--r);filter:saturate(.82) contrast(1.06)}
-.about-photo::after{content:"KING COUNTRY";position:absolute;left:0;bottom:0;background:var(--accent);color:var(--ink);font-family:var(--display);font-weight:600;font-size:.85rem;letter-spacing:.14em;padding:10px 18px}
-.about-copy h2{font-size:clamp(2rem,4vw,2.9rem);margin-bottom:18px}
-.about-copy p{margin-bottom:14px}
-.checklist{list-style:none;margin-top:24px;display:grid;gap:12px}
-.checklist li{display:flex;gap:12px;align-items:flex-start;font-weight:500;color:var(--ink)}
-.checklist svg{flex:none;margin-top:3px;color:var(--accent-deep)}
-@media (max-width:860px){.about-grid{grid-template-columns:1fr;gap:36px}}
-
-/* ---------- crew ---------- */
-.crew{background:var(--ink);color:var(--bone)}
-.crew .sec-head h2{color:var(--bone)}
-.crew .sec-head p{color:var(--mut)}
-.crew-badge{display:inline-block;font-size:.85rem;font-weight:500;color:var(--mut);border:1px solid var(--line-dark);border-radius:var(--r);padding:6px 12px;margin-top:16px}
-.crew-grid{display:grid;grid-template-columns:repeat(2,minmax(0,420px));gap:22px}
-.crew-card{background:var(--ink-2);border:1px solid var(--line-dark);border-radius:var(--r);padding:30px 26px;display:flex;gap:20px;align-items:center;transition:transform .3s cubic-bezier(.16,1,.3,1),border-color .3s ease}
-.crew-card:hover{transform:translateY(-4px);border-color:rgba(232,134,42,.5)}
-.avatar{flex:none;width:72px;height:72px;border-radius:50%;background:var(--ink-3);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-weight:700;font-size:1.6rem;color:var(--bone)}
-.crew-card .role{font-size:.78rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.crew-card h3{color:var(--bone);font-size:1.5rem;font-weight:600;margin:2px 0 6px}
-.crew-card p{font-size:.92rem;color:var(--mut);line-height:1.55}
-@media (max-width:720px){.crew-grid{grid-template-columns:1fr}}
-
-/* ---------- reviews ---------- */
-.reviews{background:var(--paper)}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:36px}
-.rev-card{background:var(--bone);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:12px;transition:transform .3s cubic-bezier(.16,1,.3,1),box-shadow .3s ease}
-.rev-card:hover{transform:translateY(-5px);box-shadow:0 16px 30px -18px rgba(23,27,33,.3)}
-.rev-card .stars{display:flex;gap:3px;color:var(--accent-deep)}
-.rev-card blockquote{font-size:.97rem;line-height:1.6;color:var(--body)}
-.rev-card footer{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:#6a717c;border-top:1px solid var(--line);padding-top:12px}
-.rev-card footer b{color:var(--ink);font-weight:600}
-.rev-note{font-size:.85rem;color:#6a717c;margin-bottom:28px;max-width:65ch}
-.rev-actions{display:flex;gap:14px;flex-wrap:wrap}
-.btn-dark{background:var(--ink);color:var(--bone)}
-.btn-dark:hover{background:var(--ink-3)}
-@media (max-width:900px){.rev-grid{grid-template-columns:1fr}}
-
-/* ---------- review banner ---------- */
-.banner{background:var(--ink-2);padding:64px 0}
-.banner-in{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
-.banner h2{color:var(--bone);font-size:clamp(1.7rem,3.6vw,2.5rem)}
-.banner p{color:var(--mut);margin-top:8px;max-width:46ch}
-
-/* ---------- contact ---------- */
-.contact{background:var(--bone)}
-.contact-card{background:var(--ink);border-radius:var(--r);overflow:hidden;display:grid;grid-template-columns:1fr 1fr;max-width:1120px;margin:0 auto}
-.contact-map{min-height:420px}
-.contact-map iframe{width:100%;height:100%;border:0;display:block;filter:saturate(.85) contrast(1.05)}
-.contact-info{padding:44px 40px;display:flex;flex-direction:column;gap:14px}
-.contact-info h2{color:var(--bone);font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:8px}
-.contact-info .btn{width:100%}
-.c-rows{margin-top:18px;display:grid;gap:14px}
-.c-row{display:flex;gap:14px;align-items:flex-start;color:rgba(244,242,236,.9);font-size:.95rem}
-.c-row svg{flex:none;color:var(--accent);margin-top:2px}
-.c-row a:hover{color:var(--accent)}
-.socials{display:flex;gap:12px;margin-top:20px}
-.socials a{width:44px;height:44px;border:1px solid var(--line-dark);border-radius:var(--r);display:flex;align-items:center;justify-content:center;color:var(--bone);transition:background .2s ease,color .2s ease,border-color .2s ease}
-.socials a:hover{background:var(--accent);border-color:var(--accent);color:var(--ink)}
-@media (max-width:860px){
-  .contact-card{grid-template-columns:1fr}
-  .contact-map{order:2;min-height:320px}
-  .contact-info{order:1}
-}
-
-/* ---------- footer ---------- */
-.footer{background:var(--ink);color:var(--mut);padding:64px 0 32px;border-top:1px solid var(--line-dark)}
-.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:44px;margin-bottom:44px}
-.foot-brand .logo{font-size:1.4rem;margin-bottom:14px}
-.foot-brand p{font-size:.92rem;max-width:36ch;line-height:1.6}
-.foot-col h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;color:var(--bone);font-size:1.05rem;margin-bottom:16px;font-weight:600}
-.foot-col ul{list-style:none;display:grid;gap:10px}
-.foot-col a{font-size:.92rem;transition:color .2s ease}
-.foot-col a:hover{color:var(--accent)}
-.foot-base{border-top:1px solid var(--line-dark);padding-top:24px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:.85rem}
-.foot-base .socials{margin:0}
-.foot-base .socials a{width:40px;height:40px}
-@media (max-width:820px){.foot-grid{grid-template-columns:1fr;gap:32px}}
-
-.logo{flex-shrink:0}
-.logo img{display:block;width:150px;height:auto;max-width:100%}
-@media(max-width:380px){.logo img{width:125px}}
-.foot-brand .logo img{width:220px}
-.intro img{width:min(440px,80vw);height:auto}
-.work-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.work-grid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:var(--r)}
-.work-grid figcaption{margin-top:12px;font-weight:500}
-@media(max-width:600px){.work-grid{grid-template-columns:1fr}.hero-slides img{object-position:78% center}}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-1-1920.webp" imagesrcset="img/hero-1-1080.webp 1080w, img/hero-1-1920.webp 1920w, img/hero-1-3840.webp 3840w" imagesizes="100vw">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="intro" aria-hidden="true"><span><img src="/images/jdh-logo.png" alt="JDH Transport" width="830" height="304"></span></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="square"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5h13v10H1zM14 9h4l3 3v3h-7"/><circle cx="5.5" cy="17.5" r="2"/><circle cx="17.5" cy="17.5" r="2"/></symbol>
+  <symbol id="i-digger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="15" width="12" height="5" rx="2.5"/><path d="M4 15v-4h6l2 4M10 11V7l6-3 5 6-2 2"/><path d="m19 12-1 3h3z"/></symbol>
+  <symbol id="i-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 17l2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.9-3.9a2 2 0 0 0-2.8 0l-.9.9a1 1 0 1 1-3-3l2.8-2.8a5.8 5.8 0 0 1 7 .9L21 7"/><path d="m3 7 2.3-2.3a5.8 5.8 0 0 1 7 .9"/><path d="M3 7l6.4 6.4M7 11l2 2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></symbol>
+  <symbol id="i-google" viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z"/><path d="M12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" opacity=".8"/><path d="M6.4 14c-.2-.6-.3-1.3-.3-2s.1-1.4.3-2V7.4H3.1a10 10 0 0 0 0 9.2z" opacity=".6"/><path d="M12 6c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.4L6.4 10C7.2 7.7 9.4 6 12 6z" opacity=".9"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.2-1.3 1.4-1.3H17V2.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V12h2.8v10H14V12h2.8l.4-3.5z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1.1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24" fill="currentColor"><path d="M16.6 2h-3.4v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.1a6.3 6.3 0 1 0 5.4 6.3V8.6a8 8 0 0 0 4.6 1.5V6.7a4.7 4.7 0 0 1-4.6-4.7z"/></symbol>
+</svg>
 
-<header class="nav">
-  <div class="nav-in">
-    <a class="logo" href="#top" aria-label="JDH Transport home"><img src="/images/jdh-logo.png" alt="JDH Transport" width="830" height="304"></a>
-    <ul class="nav-links">
+<a class="skip" href="#services">Skip to content</a>
+
+<!-- 1. NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="JDH Transport, back to top">
+      <img src="img/logo.png" alt="JDH Transport" width="830" height="304">
+    </a>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#services">Services</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#jobs">The gear</a></li>
       <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="nav-call" href="tel:+64272182136">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      <span class="nav-call-num">027 218 2136</span><span class="nav-call-short">Call</span>
-    </a>
-    <button class="burger" aria-label="Open menu" aria-expanded="false">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
+    <div class="nav-right">
+      <a class="btn btn-primary nav-call" href="tel:+64272182136"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span class="label">027 218 2136</span><span class="sr">Call 027 218 2136</span></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
   </div>
 </header>
-<nav class="m-menu" aria-label="Mobile menu">
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#reviews">Reviews</a>
-  <a href="#contact">Contact</a>
-  <a href="tel:+64272182136">Call 027 218 2136</a>
-</nav>
 
 <main id="top">
 
-<section class="hero" style="padding:0">
-  <div class="hero-slides" aria-hidden="true">
-    <img class="on" fetchpriority="high" src="/images/aggregate-truck.jpg" alt="" width="1465" height="1073">
-    <img loading="lazy" src="/images/truck-and-digger.jpg" alt="" width="1448" height="1086">
+<!-- 2. HERO -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-slides" id="heroSlides">
+    <img class="active" src="img/hero-1-1920.webp" srcset="img/hero-1-1080.webp 1080w, img/hero-1-1920.webp 1920w, img/hero-1-3840.webp 3840w" sizes="100vw" alt="JDH Transport's orange truck and trailer loaded with metal on a rural road" width="1920" height="1406" fetchpriority="high">
+    <img src="img/hero-2-1920.webp" srcset="img/hero-2-1080.webp 1080w, img/hero-2-1920.webp 1920w, img/hero-2-3840.webp 3840w" sizes="100vw" alt="JDH Transport low-loader carrying a Hitachi digger" width="1920" height="1410" loading="lazy">
+    <img src="img/hero-3-1920.webp" srcset="img/hero-3-1080.webp 1080w, img/hero-3-1920.webp 1920w, img/hero-3-3840.webp 3840w" sizes="100vw" alt="A dump truck clearing fallen trees and slip debris off a road" width="1920" height="1440" loading="lazy">
   </div>
-  <div class="hero-scrim" aria-hidden="true"></div>
-  <div class="hero-in">
-    <span class="hero-eyebrow">Taumarunui, King Country</span>
-    <h1>Freight and farm cartage across the King Country</h1>
-    <p class="hero-sub">Based on Hikumutu Road, Taumarunui. Hay, machinery, metal and general freight, loaded properly and delivered on time.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-solid" href="tel:+64272182136">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        Call 027 218 2136
-      </a>
-      <a class="btn btn-ghost" href="#contact">Get a quote</a>
-    </div>
-    <div class="hero-quote" id="heroQuote">
-      <div class="stars" aria-hidden="true">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+  <div class="wrap">
+    <span class="eyebrow hero-fade">Taumarunui · King Country</span>
+    <h1>
+      <span class="line"><span>Cartage, machinery</span></span>
+      <span class="line"><span>and digger work</span></span>
+      <span class="line"><span class="hl">around Taumarunui</span></span>
+    </h1>
+    <div class="hero-bottom hero-fade">
+      <div>
+        <p class="lead">Truck and trailer loads of metal and rock, diggers shifted on the low-loader, and gear on hand when a slip closes the road. Based on Hikumutu Road.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="tel:+64272182136"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call 027 218 2136</a>
+          <a class="btn btn-ghost" href="#contact">Get a quote <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
       </div>
-      <blockquote id="hq-text"></blockquote>
-      <cite id="hq-name"></cite>
+      <a class="rating" href="https://maps.google.com/?cid=6732236950354575687" target="_blank" rel="noopener" aria-label="Rated 5.0 from 2 Google reviews, opens Google reviews">
+        <span class="num">5.0</span>
+        <span><span class="stars" aria-hidden="true">★★★★★</span><small>"On time … excellent pricing" on Google</small></span>
+      </a>
+    </div>
+    <div class="hero-controls hero-fade">
+      <div class="slide-dots" id="dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+      <button class="slide-toggle" id="slideToggle" type="button" aria-pressed="false" aria-label="Pause slideshow"><svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg><svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg></button>
     </div>
   </div>
 </section>
 
-<section class="services" id="services">
+<!-- 3. TRUST STRIP -->
+<section class="trust" aria-label="Why use JDH">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><div><strong>Taumarunui based</strong><span>Out of Hikumutu Road, across the King Country.</span></div></div>
+    <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg><div><strong>Trucks and diggers</strong><span>Cart it, shift it or dig it with one call.</span></div></div>
+    <div class="trust-item"><svg class="icon" aria-hidden="true"><use href="#i-handshake"/></svg><div><strong>Deal with Justin</strong><span>The owner answers the phone and prices the job.</span></div></div>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section id="services" class="band-dark">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>What we cart</h2>
-      <p>If it fits on the deck, it can go on the truck. These are the loads we get asked for most; ring Justin if yours is different.</p>
+    <div class="section-head">
+      <div><span class="eyebrow reveal">What we do</span><h2 class="reveal">Load it, move it, dig it</h2></div>
+      <p class="muted reveal">The work JDH's trucks and machines are out doing around the district. If your job's a bit different, ring Justin and ask.</p>
     </div>
-    <div class="svc-grid">
-      <article class="svc reveal">
-        <div class="svc-img"><img loading="lazy" src="/images/fleet-yard.jpg" alt="JDH Transport trucks and low-loader at the yard" width="1448" height="1086"></div>
-        <div class="svc-body">
-          <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="6" width="14" height="11" rx="1"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>Freight</span>
-          <h3>General freight</h3>
-          <p>Pallets, packs, wool, timber and everything in between, moved around the district or further afield.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-img"><img loading="lazy" src="/images/rural-machinery.jpg" alt="JDH Transport truck carrying an excavator on a rural property" width="1463" height="1075"></div>
-        <div class="svc-body">
-          <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-8l9-6 9 6v8"/><path d="M9 21v-6h6v6"/></svg>Rural</span>
-          <h3>Farm &amp; rural cartage</h3>
-          <p>Feed, posts, wire, drenching gear and station supplies, delivered up the race, not dumped at the gate.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-img"><img loading="lazy" src="/images/fleet-yard.jpg" alt="JDH Transport fleet ready for cartage" width="1448" height="1086"></div>
-        <div class="svc-body">
-          <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg>Season</span>
-          <h3>Hay &amp; baleage</h3>
-          <p>Conventional, rounds or squares shifted between blocks or brought in for winter, stacked where you want them.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-img"><img loading="lazy" src="/images/black-truck.webp" alt="Black JDH Transport tipper truck" width="916" height="1020"></div>
-        <div class="svc-body">
-          <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/></svg>Supply</span>
-          <h3>Fertiliser &amp; farm supplies</h3>
-          <p>Bagged fert, lime, seed and bulk store runs timed around your season, not the courier's.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-img"><img loading="lazy" src="/images/truck-and-digger.jpg" alt="JDH Transport truck and trailer carrying a digger" width="1448" height="1086"></div>
-        <div class="svc-body">
-          <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h12M4 17a2 2 0 1 0 0 .01M16 17a2 2 0 1 0 0 .01"/><path d="M6 13l2-6h5l3 6"/></svg>Gear</span>
-          <h3>Machinery &amp; equipment</h3>
-          <p>Diggers, mowers, tanks and awkward gear moved between jobs, chained down and driven like it's ours.</p>
-        </div>
-      </article>
-      <article class="svc reveal">
-        <div class="svc-img"><img loading="lazy" src="/images/aggregate-truck.jpg" alt="Orange JDH Transport truck and trailer loaded with aggregate" width="1465" height="1073"></div>
-        <div class="svc-body">
-          <span class="svc-tag"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 18H3z"/></svg>Bulk</span>
-          <h3>Metal &amp; aggregate</h3>
-          <p>Track metal, drainage rock and builders mix carted from the quarry to your driveway, races or site.</p>
-        </div>
-      </article>
+    <div class="tiles">
+      <a href="#contact" class="tile wide wipe"><img src="img/t-cartage-1920.webp" srcset="img/t-cartage-1080.webp 1080w, img/t-cartage-1920.webp 1920w" sizes="(max-width:600px) 100vw, 66vw" alt="A JDH tipper unloading metal beside a sealed road" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">01</span><h3>Tipper &amp; trailer cartage</h3><p>Metal, rock, aggregate and fill carted to your farm, site or driveway.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/t-machinery-1920.webp" srcset="img/t-machinery-1080.webp 1080w, img/t-machinery-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="JDH truck towing a trailer with an orange digger on board" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">02</span><h3>Machinery transport</h3><p>Diggers and gear shifted between jobs on the trailer or low-loader.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/t-digger-1920.webp" srcset="img/t-digger-1080.webp 1080w, img/t-digger-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="An orange Hitachi and a yellow Hyundai digger on a sand pile" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">03</span><h3>Digger work</h3><p>Excavators for site work, tracks and drainage.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/t-slip-1920.webp" srcset="img/t-slip-1080.webp 1080w, img/t-slip-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="Dump truck clearing a slip and fallen trees from a road" width="1920" height="1440" loading="lazy"><div class="tile-body"><span class="num">04</span><h3>Slip &amp; storm clean-up</h3><p>Fallen trees and slip debris cleared to get the road open.</p></div></a>
+      <a href="#contact" class="tile wipe"><img src="img/t-metal-1920.webp" srcset="img/t-metal-1080.webp 1080w, img/t-metal-1920.webp 1920w" sizes="(max-width:600px) 100vw, 33vw" alt="A freshly metalled rural road through native bush" width="1440" height="1920" loading="lazy"><div class="tile-body"><span class="num">05</span><h3>Roads &amp; tracks</h3><p>Metal carted and spread for farm tracks and rural roads.</p></div></a>
+      <a href="#contact" class="tile full wipe"><img src="img/t-bulk-1920.webp" srcset="img/t-bulk-1080.webp 1080w, img/t-bulk-1920.webp 1920w" sizes="100vw" alt="A side-tipping bulk trailer parked on a paddock" width="1440" height="1920" loading="lazy"><div class="tile-body"><span class="num">06</span><h3>Bulk loads</h3><p>Bulk trailers for bigger volumes of rock, lime or aggregate.</p></div></a>
     </div>
   </div>
 </section>
 
-<section class="work" id="work">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Out on the job</h2>
-      <p>A closer look at the equipment and work behind JDH Transport.</p>
-    </div>
-    <div class="work-grid">
-      <figure class="reveal"><img src="/images/excavators.jpg" alt="Hitachi and Hyundai excavators with an operator at a work site" loading="lazy" width="1448" height="1086"><figcaption>Equipment on site</figcaption></figure>
-      <figure class="reveal"><img src="/images/road-clearing.jpg" alt="Yellow site dumper beside fallen branches on a rural road" loading="lazy" width="1448" height="1086"><figcaption>Working on rural roads</figcaption></figure>
-    </div>
-  </div>
-</section>
-
-<section id="about">
+<!-- 5. ABOUT -->
+<section id="about" class="band-light">
   <div class="wrap about-grid">
-    <div class="about-photo reveal">
-      <img loading="lazy" src="/images/fleet-yard.jpg" alt="JDH Transport trucks parked at the yard" width="1448" height="1086">
+    <div class="about-img wipe-up">
+      <img src="img/about-1920.webp" srcset="img/about-1080.webp 1080w, img/about-1920.webp 1920w" sizes="(max-width:860px) 100vw, 50vw" alt="JDH Transport trucks lined up in the yard with a low-loader" width="1920" height="1440" loading="lazy">
+      <div class="corner-tag">Locally<br>owned</div>
     </div>
-    <div class="about-copy reveal">
-      <h2>Straight-up rural freight</h2>
-      <p>JDH Transport runs out of Hikumutu Road, just outside Taumarunui. Justin takes on the loads the big line-haul firms don't want: farm jobs, awkward gear, tight tracks and real deadlines.</p>
-      <p>You deal with the driver, not a dispatch desk. Tell us what needs moving and when, and you'll get a straight answer on whether we can do it and what it will cost.</p>
-      <ul class="checklist">
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Locally owned and driven</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>One call, one clear price</li>
-        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Loads strapped, covered and delivered right</li>
+    <div>
+      <span class="eyebrow reveal">About us</span>
+      <h2 class="reveal">A local carrier with the gear to match</h2>
+      <p class="muted reveal">JDH Transport is Justin's business, run from 292 Hikumutu Road just outside Taumarunui. The yard holds tippers, truck-and-trailer units, a low-loader and diggers, so a job that needs carting, shifting and digging can be sorted with one call.</p>
+      <p class="muted reveal">You talk to the person running the gear. Tell Justin what needs doing, where and when, and you'll get a straight answer and a price.</p>
+      <ul class="checklist reveal">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Locally owned and operated in Taumarunui</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Trucks, trailers and diggers under one roof</li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Clear prices before the work starts</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="crew">
+<!-- STATS BAND -->
+<section class="parallax" aria-label="At a glance">
+  <div class="bg" id="parallaxBg"></div>
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Who you're dealing with</h2>
-      <p>No call centre and no run-around. The person who quotes the job is the one behind the wheel.</p>
-      <span class="crew-badge">Example team, roles shown until confirmed</span>
-    </div>
-    <div class="crew-grid">
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">J</div>
-        <div>
-          <span class="role">Owner / Driver</span>
-          <h3>Justin</h3>
-          <p>Quotes the job, drives the truck and answers the phone. If he says it'll be there Tuesday, it's there Tuesday.</p>
-        </div>
-      </article>
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">RD</div>
-        <div>
-          <span class="role">Relief Driver</span>
-          <h3>Seasonal cover</h3>
-          <p>Extra hands over hay season and the busy months, so the phone still gets answered when the truck is full.</p>
-        </div>
-      </article>
+    <div class="stats">
+      <div class="stat reveal"><div class="n">Cart</div><p>Metal, rock &amp; aggregate</p></div>
+      <div class="stat reveal"><div class="n">Shift</div><p>Diggers &amp; machinery</p></div>
+      <div class="stat reveal"><div class="n">Dig</div><p>Sites, tracks &amp; slips</p></div>
     </div>
   </div>
 </section>
 
-<section class="reviews" id="reviews">
+<!-- RECENT WORK -->
+<section id="jobs" class="band-dark">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>What locals say</h2>
-      <p>Example reviews written for this demo. Justin's real Google reviews will show here once his profile is linked.</p>
+    <div class="section-head">
+      <div><span class="eyebrow reveal">The gear</span><h2 class="reveal">Out on the job</h2></div>
+      <p class="muted reveal">JDH trucks, trailers and machines around the district.</p>
     </div>
-    <div class="rev-grid">
-      <article class="rev-card reveal">
-        <div class="stars" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <blockquote>Rang on a Friday about shifting a shed's worth of gear before the weekend. Truck was in the yard Saturday morning. Can't ask for better.</blockquote>
-        <footer><b>Mark T.</b><span>Ōwhango</span></footer>
-      </article>
-      <article class="rev-card reveal">
-        <div class="stars" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <blockquote>Justin carted our baleage over from the other block. Careful on the race and stacked it exactly where we wanted it.</blockquote>
-        <footer><b>Sharon K.</b><span>Piriaka</span></footer>
-      </article>
-      <article class="rev-card reveal">
-        <div class="stars" aria-hidden="true">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <blockquote>Had a digger to shift at short notice. Fair price, no drama, and the gear turned up without a scratch.</blockquote>
-        <footer><b>Dave R.</b><span>Te Kūiti</span></footer>
-      </article>
-    </div>
-    <p class="rev-note reveal">These three are examples for the demo, written the way locals actually talk about their carrier.</p>
-    <div class="rev-actions reveal">
-      <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener">See all our Google reviews</a>
+    <div class="masonry">
+      <figure class="wipe-up"><img src="img/job-1-1920.webp" srcset="img/job-1-1080.webp 1080w, img/job-1-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Black JDH tipper truck parked in the yard" width="1724" height="1920" loading="lazy"></figure>
+      <figure class="wipe-up"><img src="img/t-metal-1920.webp" srcset="img/t-metal-1080.webp 1080w, img/t-metal-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Metal spread along a rural road" width="1440" height="1920" loading="lazy"></figure>
+      <figure class="wipe-up"><img src="img/t-machinery-1920.webp" srcset="img/t-machinery-1080.webp 1080w, img/t-machinery-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Truck with a digger on the trailer under a big tree" width="1920" height="1440" loading="lazy"></figure>
+      <figure class="wipe-up"><img src="img/band-1920.webp" srcset="img/band-1080.webp 1080w, img/band-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Rock trailer being loaded beside a pile of boulders" width="1920" height="1440" loading="lazy"></figure>
+      <figure class="wipe-up"><img src="img/t-bulk-1920.webp" srcset="img/t-bulk-1080.webp 1080w, img/t-bulk-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Side-tipping bulk trailer on grass" width="1440" height="1920" loading="lazy"></figure>
+      <figure class="wipe-up"><img src="img/t-cartage-1920.webp" srcset="img/t-cartage-1080.webp 1080w, img/t-cartage-1920.webp 1920w" sizes="(max-width:520px) 100vw, (max-width:900px) 50vw, 33vw" alt="Tipper raising its deck to unload" width="1920" height="1440" loading="lazy"></figure>
     </div>
   </div>
 </section>
 
-<section class="banner" style="padding:64px 0">
-  <div class="wrap banner-in">
-    <div class="reveal">
-      <h2>Happy with our work?</h2>
-      <p>A quick Google review helps other King Country farmers and businesses find a carrier they can rely on.</p>
+<!-- 6. TEAM -->
+<section id="team" class="band-light">
+  <div class="wrap">
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Who you deal with</span><h2 class="reveal">No dispatch desk</h2></div>
     </div>
-    <a class="btn btn-solid reveal" href="https://www.google.com/maps/search/?api=1&query=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener">Leave us a review</a>
+    <div class="team-grid">
+      <div class="team-card reveal"><div class="avatar">J</div><h3>Justin</h3><p class="role">Owner</p><p>Answers the phone, prices the job and runs the gear. If something changes, you hear it from him.</p></div>
+    </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
+<!-- 7. REVIEWS -->
+<section id="reviews" class="band-dark">
   <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Book a load</h2>
-      <p>Ring or email with what needs moving, where from and where to, and roughly when. You'll get a price, not a runaround.</p>
+    <div class="section-head">
+      <div><span class="eyebrow reveal">Google reviews</span><h2 class="reveal">5.0 on Google</h2></div>
+      <p class="muted reveal">Word for word from JDH Transport's Google profile.</p>
     </div>
-    <div class="contact-card reveal">
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps?q=292%20Hikumutu%20Road%2C%20Taumarunui%203992%2C%20New%20Zealand&output=embed" title="Map showing JDH Transport on Hikumutu Road, Taumarunui" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-      <div class="contact-info">
-        <h2>JDH Transport</h2>
-        <a class="btn btn-solid" href="tel:+64272182136">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Call JDH Transport
-        </a>
-        <a class="btn btn-ghost" data-gmail data-user="justin.fowklews" data-domain="hotmail.com" data-su="Freight%20quote" href="#contact">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-          Email JDH Transport
-        </a>
-        <div class="c-rows">
-          <div class="c-row">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <a href="tel:+64272182136">027 218 2136</a>
-          </div>
-          <div class="c-row">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-            <a data-gmail data-user="justin.fowklews" data-domain="hotmail.com" data-su="Freight%20quote" href="#contact"><span data-email-text>Email Justin directly</span></a>
-          </div>
-          <div class="c-row">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>292 Hikumutu Road, Taumarunui 3992</span>
-          </div>
-        </div>
-        <div class="socials">
-          <a href="https://www.facebook.com/search/top?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Find JDH Transport on Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-          <a href="https://www.instagram.com/explore/search/keyword/?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Find JDH Transport on Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-          </a>
-        </div>
+    <div class="reviews-grid two">
+      <article class="review reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Highly recommended. Was there on time and service with a smile. Excellent pricing."</p><footer><strong>Shelley Oliver</strong>Google review</footer></article>
+      <article class="review reveal"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p class="rating-only">Five-star rating on Google, left without a written comment.</p><footer><strong>felicity Bates</strong>Google rating</footer></article>
+    </div>
+    <div class="center reveal"><a class="btn btn-ghost" href="https://maps.google.com/?cid=6732236950354575687" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-google"/></svg>See us on Google</a></div>
+  </div>
+</section>
+
+<!-- 8. LEAVE A REVIEW -->
+<section class="review-banner" aria-label="Leave a review">
+  <div class="wrap">
+    <div><h2>Happy with the job? Leave us a review</h2><p>It helps other King Country locals find a carrier they can rely on.</p></div>
+    <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJ13O4a80_a20RR8GkYda1bV0" target="_blank" rel="noopener">Leave a Google review</a>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section id="faq" class="band-light">
+  <div class="wrap faq-grid">
+    <div><span class="eyebrow reveal">FAQ</span><h2 class="reveal">Before you call</h2><p class="muted reveal">Anything else, ring Justin on <a href="tel:+64272182136">027 218 2136</a>.</p></div>
+    <div class="faq-list reveal">
+      <details><summary>What areas do you cover?</summary><p>We're based on Hikumutu Road just outside Taumarunui and work around the district and the wider King Country. If your job's further out, give Justin a ring and ask.</p></details>
+      <details><summary>How do I get a price?</summary><p>Call or email with what needs moving or doing, where from and where to, and roughly when. Justin will come back to you with a price.</p></details>
+      <details><summary>Can you shift my digger or machinery?</summary><p>Yes. JDH runs a trailer and low-loader for moving diggers and other gear between jobs. Tell Justin the machine and its weight when you call.</p></details>
+      <details><summary>Can you supply and cart metal?</summary><p>We cart metal, rock and aggregate on the tippers and truck-and-trailer. Ask Justin about the type of metal, how much you need, and whether it's supplied or carted only.</p></details>
+      <details><summary>Can you help after a slip or storm?</summary><p>We've had trucks and machines out clearing slips and fallen trees. Ring Justin straight away and he'll tell you what he can do and when.</p></details>
+      <details><summary>Do I need to be there on the day?</summary><p>It helps to be there or have someone on site to show where things go. Make sure there's clear access for a truck and trailer.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow reveal">Contact</span>
+      <h2 class="reveal">Got a load or a job?</h2>
+      <p class="muted reveal">Call Justin for a quote, or email the details and he'll come back to you.</p>
+      <ul class="contact-rows reveal">
+        <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+64272182136">027 218 2136</a></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span id="emailText">justin.hawkless [at] hotmail.com</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>292 Hikumutu Road, Taumarunui 3992</span></li>
+        <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Call Justin to book a job</span></li>
+      </ul>
+      <div class="socials reveal">
+        <a href="https://www.facebook.com/search/top?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Search Facebook for JDH Transport"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Search Instagram for JDH Transport"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Search TikTok for JDH Transport"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
       </div>
     </div>
+    <div class="contact-actions">
+      <a class="btn btn-primary reveal" href="tel:+64272182136">Call for a quote <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></a>
+      <a class="btn btn-ghost reveal" href="#" data-gmail data-user="justin.hawkless" data-domain="hotmail.com" data-su="Cartage%20%2F%20machinery%20job" data-body="Hi%20Justin%2C%0A%0AWhat%20needs%20doing%3A%0AFrom%3A%0ATo%3A%0AWhen%3A%0A%0AThanks">Email Justin the job <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
+    </div>
   </div>
+</section>
+
+<!-- 11. MAP -->
+<section class="map" aria-label="Map">
+  <iframe title="Map to JDH Transport, 292 Hikumutu Road, Taumarunui" src="https://www.google.com/maps?q=JDH+Transport,+292+Hikumutu+Road,+Taumarunui+3992&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </section>
 
 </main>
 
+<!-- 12. FOOTER -->
 <footer class="footer">
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <span class="logo"><img src="/images/jdh-logo.png" alt="JDH Transport" width="830" height="304"></span>
-        <p>Rural freight and cartage based on Hikumutu Road, Taumarunui, serving farms and businesses across the King Country.</p>
-      </div>
-      <div class="foot-col">
-        <h3>Site</h3>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="foot-col">
-        <h3>Legal</h3>
-        <ul>
-          <li><a href="/terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="/privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
+    <div class="foot-brand">
+      <img src="img/logo.png" alt="JDH Transport logo" width="830" height="304" loading="lazy">
+      <span>© <span id="year">2026</span> JDH Transport · Taumarunui</span>
     </div>
-    <div class="foot-base">
-      <span>&copy; 2026 JDH Transport, Taumarunui. All rights reserved.</span>
-      <div class="socials">
-        <a href="https://www.facebook.com/search/top?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Find JDH Transport on Facebook">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/explore/search/keyword/?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Find JDH Transport on Instagram">
-          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-        </a>
-      </div>
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ13O4a80_a20RR8GkYda1bV0" target="_blank" rel="noopener">Leave a review</a>
+    </div>
+    <div class="socials">
+      <a href="https://www.facebook.com/search/top?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Search Facebook for JDH Transport"><svg aria-hidden="true"><use href="#i-fb"/></svg></a>
+      <a href="https://www.instagram.com/explore/search/keyword/?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Search Instagram for JDH Transport"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+      <a href="https://www.tiktok.com/search?q=JDH%20Transport%20Taumarunui" target="_blank" rel="noopener" aria-label="Search TikTok for JDH Transport"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
     </div>
   </div>
 </footer>
 
-<script>
-(function(){
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  /* intro curtain */
-  window.addEventListener('load', function(){ document.body.classList.add('loaded'); });
-  setTimeout(function(){ document.body.classList.add('loaded'); }, 2600);
-
-  /* mobile menu */
-  var burger = document.querySelector('.burger');
-  var menu = document.querySelector('.m-menu');
-  burger.addEventListener('click', function(){
-    var open = menu.classList.toggle('open');
-    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  menu.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click', function(){ menu.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
-  });
-
-  /* hero slide rotation */
-  var slides = Array.prototype.slice.call(document.querySelectorAll('.hero-slides img'));
-  if(!reduced && slides.length > 1){
-    var cur = 0;
-    setInterval(function(){
-      slides[cur].classList.remove('on');
-      cur = (cur + 1) % slides.length;
-      slides[cur].classList.add('on');
-    }, 6000);
-  }
-
-  /* rotating hero review quotes (same array as the review cards) */
-  var quotes = [
-    { t:'"Truck was in the yard Saturday morning. Can\'t ask for better."', n:'Mark T., Ōwhango (example review)' },
-    { t:'"Careful on the race and stacked it exactly where we wanted it."', n:'Sharon K., Piriaka (example review)' },
-    { t:'"Fair price, no drama, and the gear turned up without a scratch."', n:'Dave R., Te Kūiti (example review)' }
-  ];
-  var hq = document.getElementById('heroQuote');
-  var hqText = document.getElementById('hq-text');
-  var hqName = document.getElementById('hq-name');
-  var qi = 0;
-  function setQuote(i){ hqText.textContent = quotes[i].t; hqName.textContent = quotes[i].n; }
-  setQuote(0);
-  if(!reduced && quotes.length > 1){
-    setInterval(function(){
-      hq.classList.add('fading');
-      setTimeout(function(){
-        qi = (qi + 1) % quotes.length;
-        setQuote(qi);
-        hq.classList.remove('fading');
-      }, 500);
-    }, 6000);
-  }
-
-  /* scroll reveals */
-  var io = new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
-
-  /* gmail compose links built from split parts */
-  document.querySelectorAll('a[data-gmail]').forEach(function(a){
-    var to = a.getAttribute('data-user') + '@' + a.getAttribute('data-domain');
-    a.href = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + '&su=' + (a.getAttribute('data-su')||'') + '&body=' + (a.getAttribute('data-body')||'');
-    a.target = '_blank';
-    a.rel = 'noopener';
-  });
-})();
-</script>
+<script src="script.js"></script>
 </body>
 </html>
